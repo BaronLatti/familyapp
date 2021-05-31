@@ -1,0 +1,36 @@
+<html>
+    <h1>
+        My Family
+    </h1>>
+    <img src="istockphoto-1186052995-612x612.jpg" id="pic">
+    <p>
+        This is a website about my family!
+    </p>
+    <h2 id="name">
+    </h2>>
+    <button onclick=change()>
+    Next
+    </button>
+    
+    
+    
+    
+    
+    <script>
+        var family=["Kamora- My Sister", "Milton- My Dad", "Ruth- My Mom" ];
+        var images=["zuri-1-vertical-1200x1800.jpg", "istockphoto-1165724733-612x612.jpg", "istockphoto-1186052995-612x612.jpg"];
+        var i=0;
+        var family_number=0;
+        
+        function change() {
+            i++;
+            var family_number=3
+            if ( i > family_number){
+                i=0;
+            }
+            var name_update= family[i];
+            var img_update=images[i];
+
+
+        }
+  
