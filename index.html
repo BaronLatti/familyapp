@@ -1,14 +1,23 @@
 <html>
+    <head>
+  <title>
+      Family Book
+        </title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+    
+    <body>
     <h1>
         My Family
-    </h1>>
-    <img src="istockphoto-1186052995-612x612.jpg" id="pic">
+    </h1>
+    <img src="istockphoto-1186052995-612x612.jpg" id="family_member_image">
     <p>
         This is a website about my family!
     </p>
-    <h2 id="name">
+    <h2 id="family_member_name">
     </h2>
-    <button onclick="change()">
+    <button onclick="update()">
     Next
     </button>
     
@@ -18,17 +27,22 @@
     
     <script>
         var family=["Kamora- My Sister", "Milton- My Dad", "Ruth- My Mom" ];
-        var images=["zuri-1-vertical-1200x1800.jpg", "istockphoto-1165724733-612x612.jpg", "istockphoto-1186052995-612x612.jpg"];
-        var i=0;
-        var family_number=0;
-        
-        function change() {
-            i++;
-            var family_number=3
-            if ( i > family_number){
-                i=0;
+        var images=["zuri-1-vertical-1200x1800.jpg", "istockphoto-1165724733-612x612.jpg", "86d5bd80825816cc7605c4e8cacaf4ba.jpg"];
+        var i = 0;
+            function update()
+            {
+                i++;
+                var numbers_of_family_member_in_array = 3;
+                if(i > numbers_of_family_member_in_array )
+                {
+                    i = 0;
+                }
+                var updatedImage = images[i];
+                var updatedName  = family[i];
+                document.getElementById("family_member_image").src = updatedImage;
+                document.getElementById("family_member_name").innerHTML = updatedName;
             }
-            var name_update= family[i];
-            var img_update=images[i];
-</script>
+        </script>
+    </body>
+</html>
   
